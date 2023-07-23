@@ -1,0 +1,9 @@
+Hello,  world!
+This is a    test.
+\t \t 
+The end.nks = 0 tabs = 0 ne = 0
+blanks = 0 tabs = 0 ne = 0
+: "\t"jdflsaj"\t"
+	jlfjsd	jflsda\n \n`
+Hello\tworld\t!\t\t\t\t\t\t\t\t
+
