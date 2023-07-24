@@ -4,14 +4,15 @@
 
 int main()
 {
-  int c ;
+  int c;
   while((c = getchar()) != EOF) {
-    if( c == '	') {
-      printf("    ");
+    int n = 4;
+    if( c == '\t') {
+      while(n--) 
+        printf(" ");
     }
-    else {
+    else 
       putchar(c);
-    }
   }
 }
 
