@@ -7,25 +7,19 @@ int main(){
     char b[] = "hl";
 
     squeeze(a,b);
-
-
+    printf("%s\n",a);
 }
 
 void squeeze(char s1[],char s2[]) {
-  int i,j,k,len;
-  char s[1000];
+  int i,j,k;
+  k = 0;
 
-  i = j = k = 0;
-  for(i;s1[i] != '\0';++i) {
-    j = 0;
-    for(j;s2[j] != '\0';++j) {
-      if(s1[i] != s2[j]) 
-        s[k++] = s1[i];
+  while(s2[k] != '\0') {
+    for(i = j = 0; s1[i] != '\0'; i++) {
+      if(s1[i] != s2[k])
+        s1[j++] = s1[i];
     }
+    s1[j] = '\0';
+    k++;
   }
-  s[k] = '\0';
-  printf("%s",s);
-//  int m=0;
-//  for(m;m<len;m++) 
-//    s1[m] = s[m];
 }
