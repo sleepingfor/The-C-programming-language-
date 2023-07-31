@@ -28,26 +28,14 @@ int any(char s1[],char s2[]) {
   i = k = 0;
   first_l = -1;
   
-  int mid1 = 0;
-  int mid2 = 0;
   while(s2[i] != '\0') {
-    printf("in while\n");
-    for(j = 0; s1[j] = '\0'; ++j) {
-      if(s1[j] == s2[i])
-        printf("in for\n");
-        mid1 = j;
-        k = 1;
-        printf("in k is %d\n",k);
-        if(mid1 > mid2 || k)
-          mid1 = mid2;
-        break;
+    for(j = 0; s1[j] != '\0'; ++j) {
+      if(s1[j] == s2[i]) {
+        return j;
+      }
     }
-    mid2 = mid1;
     i++;
   }
-  printf("out k is %d\n",k);
-  if(k)
-    first_l = mid2;
 
   return first_l;
 }
